@@ -1,0 +1,67 @@
+h1{
+    text-align: center;
+}
+
+#title img{
+    height: 300px;
+    width: auto;
+    text-align: center;
+    border-radius: 5%;
+}
+
+#title{
+    text-align: center;
+    color: #323240;
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+
+body{
+    background: url(background.jpg);
+    background-repeat: repeat;
+    background-size: 50px;
+}
+
+#title button{
+    height: 125px;
+    width: 250px;
+    border-radius: 20%;
+    font-size: 50px;
+    background-color: #5c5c8e;
+    color: rgb(190, 180, 180);
+}
+
+#game{
+    text-align: center;
+    color: #171727;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#game img{
+    height: 450px;
+    width: auto;
+    border-radius: 5%;
+}
+
+#buttons{
+    text-align: center;
+}
+
+#buttons button{
+    height: 100px;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 50px;
+    background-color: #5c5c8e;
+    color: rgb(190, 180, 180);
+    margin: 10px;
+}
+
+#san{
+    font-size: 100px;
+    background-image: url(san.jpg);
+    background-size: 65px;
+    text-align: center;
+}
