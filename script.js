@@ -7,3 +7,7 @@ document.getElementById("catBtn").onclick = function(){
   alert("It's Cat! Yeeey!");
   window.location.href = "game2.html";
 }
+
+function openImage() {
+  window.open("humpok.jpg");
+}
