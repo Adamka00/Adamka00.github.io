@@ -11,3 +11,7 @@ document.getElementById("catBtn").onclick = function(){
 function openImage() {
   window.open("humpok.jpg");
 }
+
+function openJozsi() {
+  window.location.href = "sec.html";
+}
