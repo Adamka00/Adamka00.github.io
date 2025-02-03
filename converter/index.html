@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számrendszer Átváltó</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #555;
+        }
+    </style>
+</head>
+<body>
+    <h2>Számrendszer Átváltó</h2>
+    <label>Decimális: <input type="text" id="decimal" oninput="convert('decimal')"></label><br>
+    <label>Bináris: <input type="text" id="binary" oninput="convert('binary')"></label><br>
+    <label>Hexadecimális: <input type="text" id="hexadecimal" oninput="convert('hexadecimal')"></label><br>
+
+    <script>
+        function convert(from) {
+            let decimalValue;
+            try {
+                if (from === 'decimal') {
+                    decimalValue = parseInt(document.getElementById('decimal').value, 10);
+                } else if (from === 'binary') {
+                    decimalValue = parseInt(document.getElementById('binary').value, 2);
+                } else if (from === 'hexadecimal') {
+                    decimalValue = parseInt(document.getElementById('hexadecimal').value, 16);
+                }
+                
+                if (isNaN(decimalValue)) return;
+                
+                document.getElementById('decimal').value = decimalValue;
+                document.getElementById('binary').value = decimalValue.toString(2);
+                document.getElementById('hexadecimal').value = decimalValue.toString(16).toUpperCase();
+            } catch (e) {
+                console.error("Hibás bevitel", e);
+            }
+        }
+    </script>
+</body>
+</html>
