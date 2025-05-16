@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Műfajok – Főoldal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Kedvenc zenei műfajaim</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="metal.html">Metal műfajok</a></li>
+        <li><a href="edm.html">Elektronikus zene</a></li>
+        <li><a href="hiphop.html">Hip-hop stílusok</a></li>
+      </ul>
+    </nav>
+
+    <button id="betumeretGomb">Betűméret váltása</button>
+
+  </header>
+  <main>
+    <section>
+      <h2>Bevezetés</h2>
+      <p>Üdvözöllek a kedvenc zenei műfajaimat bemutató weboldalon! Itt megtalálhatod a kedvenc stílusaim leírását és
+        történetét.</p>
+    </section>
+    <section>
+      <h2>Kategóriák</h2>
+      <ul>
+        <li><a href="metal.html">Metal műfajok</a></li>
+        <li><a href="edm.html">Elektronikus tánczene (EDM)</a></li>
+        <li><a href="hiphop.html">Hip-hop stílusok</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Főbb kategóriák</h2>
+      <div class="kategoriak">
+        <a href="metal.html">
+          <img src="Kepek/metal.png" alt="Metal műfaj" class="kategoriakep">
+        </a>
+        <a href="edm.html">
+          <img src="Kepek/edm.jpg" alt="Elektronikus zene" class="kategoriakep">
+        </a>
+        <a href="hiphop.html">
+          <img src="Kepek/hiphop.jpg" alt="Hip-hop stílus" class="kategoriakep">
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Műfajok összehasonlítása</h2>
+      <table>
+        <caption>Három zenei műfaj összehasonlítása</caption>
+        <thead>
+          <tr>
+            <th>Műfaj</th>
+            <th>Tempó (BPM)</th>
+            <th>Jellemző hangzás</th>
+            <th>Eredet</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Metal</td>
+            <td>100–180</td>
+            <td>Torzított gitár, dob, erőteljes ének</td>
+            <td>1960–70-es évek, Egyesült Királyság</td>
+          </tr>
+          <tr>
+            <td>EDM</td>
+            <td>120–150</td>
+            <td>Szintetizátor, dobgép, elektronikus effektek</td>
+            <td>1980-as évek, USA/Európa</td>
+          </tr>
+          <tr>
+            <td>Hip-hop</td>
+            <td>70–110</td>
+            <td>Ritmusos beszéd (rap), sampling, beat</td>
+            <td>1970-es évek, USA (Bronx)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+    <section>
+      <h2>Írd meg, neked melyik műfaj tetszik a legjobban!</h2>
+      <form action="#" method="post">
+        <label for="nev">Neved:</label><br>
+        <input type="text" id="nev" name="nev" required><br><br>
+
+        <label for="mufaj">Kedvenc műfajod:</label><br>
+        <select id="mufaj" name="mufaj">
+          <option value="metal">Metal</option>
+          <option value="edm">Elektronikus zene (EDM)</option>
+          <option value="hiphop">Hip-hop</option>
+        </select><br><br>
+
+        <label for="velemeny">Véleményed:</label><br>
+        <textarea id="velemeny" name="velemeny" rows="5" cols="40"
+          placeholder="Miért pont ezt a műfajt szereted?"></textarea><br><br>
+
+        <input type="submit" value="Beküldés">
+      </form>
+    </section>
+
+  </main>
+  <footer>
+    <p>Majczán Ádám | SYS91T</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
